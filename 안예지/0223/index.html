@@ -6,45 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <table border="1">
-        <tr>
-            <th>월</th>
-            <th>화</th>
-            <th>수</th>
-            <th>목</th>
-            <th>금</th>
-            <th>토</th>
-            <th>일</th>
-        </tr>
-        <tr>
-            <td colspan="2">쌀밥</td>
-            <td colspan="3">잡곡밥</td>
-            <td>스파게티</td>
-            <td>짜장면</td>
-        </tr>
-        <tr>
-            <td>불고기</td>
-            <td>떡갈비</td>
-            <td>미니돈까스</td>
-            <td>오징어볶음</td>
-            <td>제육볶음</td>
-            <td rowspan="2">피클</td>
-            <td>단무지</td>
-        </tr>
-        <tr>
-            <td>배추김치</td>
-            <td>깍두기</td>
-            <td>미소된장국</td>
-            <td>동치미</td>
-            <td>고추절임</td>
-            <td>짬뽕국물</td>
-        </tr>
+    <ul id="paginated-list" aria-live="polite">
+        <li>content 1</li>
+        <li>content 2</li>
+        <li>content 3</li>
+        <li>content 4</li>
+        <li>content 5</li>
+        <li>content 6</li>
+        <li>content 7</li>
+        <li>content 8</li>
+        <li>content 9</li>
+        <li>content 10</li>
+    </ul>
+    <nav class="pagination-container">
+        <button class="pagination-button" id="prev-btn" title="이전 페이지" aria-label="이전 페이지">
+            &lt;
+        </button>
+        <div id="pagination-numbers">
 
+        </div>
+        <button class="pagination-button" id="next-btn" title="다음 페이지" aria-label="다음 페이지">
+            &gt;
+        </button>
+    </nav>
 
-    </table>
+    <script defer src="./index.js"></script>
 
 </body>
 
